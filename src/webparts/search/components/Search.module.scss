@@ -1,0 +1,288 @@
+@import '~@fluentui/react/dist/sass/References.scss';
+
+div[data-automation-id="CanvasLayout"]>div>div[data-automation-id="CanvasZone"],
+div[data-automation-id="CanvasLayout"]>div>div[data-automation-id="CanvasZone"]>div,
+div[data-automation-id="CanvasLayout"]>div>div[data-automation-id="CanvasZone"]>div>div,
+div[data-automation-id="CanvasLayout"]>div>div[data-automation-id="CanvasZone"]>div>div>div,
+div[data-automation-id="CanvasLayout"]>div>div[data-automation-id="CanvasZone"]>div>div>div>div {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.search {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+@import '~@fluentui/react/dist/sass/References.scss';
+
+.search {
+  overflow: hidden;
+  padding: 1em;
+  color: "[theme:bodyText, default: #323130]";
+  color: var(--bodyText);
+
+  &.teams {
+    font-family: $ms-font-family-fallbacks;
+  }
+}
+
+.welcome {
+  text-align: center;
+}
+
+.welcomeImage {
+  width: 100%;
+  max-width: 420px;
+}
+
+.links {
+  a {
+    text-decoration: none;
+    color: "[theme:link, default:#03787c]";
+    color: var(--link); // note: CSS Custom Properties support is limited to modern browsers only
+
+    &:hover {
+      text-decoration: underline;
+      color: "[theme:linkHovered, default: #014446]";
+      color: var(--linkHovered); // note: CSS Custom Properties support is limited to modern browsers only
+    }
+  }
+}
+
+.landingPage {
+  min-height: calc(100vh - 180px);
+  // background: url('../../../assets/images/contentBg.png') no-repeat 0 60vh;
+  // background-size: 100%;
+}
+
+.landingCenter {
+  width: 90%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 5vh 0;
+}
+
+.pageHead {
+  color: #EE4E09;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.pageDescr {
+  color: #151515;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+
+.mainContainer {
+  background: rgba(255, 139, 97, 0.04);
+  border: 1px solid #EBEBEB;
+  box-shadow: 2px 2px 4px rgba(139, 139, 139, 0.25);
+  backdrop-filter: blur(0px);
+  border-radius: 8px;
+  padding: 30px 30px 10px;
+  margin-top: 5vh;
+}
+
+.tabContainer>div>div:first-child {
+  border-bottom: 2px solid #EE4E09;
+  padding: 0;
+  height: 44px;
+}
+
+.pivotLink {
+  background-color: transparent;
+  line-height: normal;
+  border: 2px solid transparent;
+}
+
+.pivotLink:hover {
+  background-color: transparent;
+  color: #EE4E09;
+}
+
+.tabActive {
+  background-color: transparent;
+  border: 2px solid #EE4E09;
+  font-weight: 400;
+  border-bottom: 2px solid #fffaf9;
+  color: #EE4E09 !important;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+.tabActive span {
+  color: #EE4E09;
+}
+
+.tabActive:before {
+  display: none;
+}
+
+.tabContentList {
+  padding-top: 30px;
+}
+
+.tabContentList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tabContentList ul li {
+  padding-left: 20px;
+  position: relative;
+}
+
+.tabContentList ul li:before {
+  content: '';
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid #EE4E09;
+  position: absolute;
+  left: 2px;
+  top: 6px;
+  background-color: #FFF;
+}
+
+.tabContentList ul li:not(:last-child) {
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #CCC;
+}
+
+.tabContentList ul li>div {
+  margin-bottom: 6px;
+  color: #555;
+}
+
+.tabContentList ul li h3 {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #EE4E09;
+}
+
+.tabContentList ul li>div strong {
+  display: inline-block;
+  font-weight: 600;
+  margin-right: 5px;
+  color: #666666;
+}
+
+.tabContentList ul li>div span {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.searchLink {
+  color: #000099 !important;
+  cursor: pointer;
+  word-break: break-all;
+}
+
+.searchLink:hover {
+  text-decoration: underline;
+}
+
+.spItem {
+  font-weight: 400 !important;
+}
+
+.paginationHolder {
+  border-top: 1px solid #EE4E09;
+  padding: 15px 0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paginationHolder button {
+  margin: 0 3px;
+  background-color: #FFF;
+  border: 1px solid #EE4E09;
+  border-radius: 3px;
+}
+
+.paginationHolder .displayRecords {
+  background-color: #EE4E09;
+  color: #FFF;
+  padding: 5px;
+  font-weight: 600;
+}
+
+.paginationHolder button:focus {
+  outline: 0;
+}
+
+.paginationHolder button[disabled] {
+  cursor: not-allowed;
+  opacity: 0;
+}
+
+.paginationHolder button.backBtn,
+.paginationHolder button.nextBtn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  // background: transparent url('../assets/backBtn.png') no-repeat 50% 50%;
+  background-size: contain;
+  font-size: 1px;
+  color: transparent;
+}
+
+.nextBtn {
+  transform: rotate(180deg);
+}
+
+.searchContainer {
+  position: absolute;
+  top: 28px;
+  right: 30px;
+  z-index: 10
+}
+
+@media screen and (max-width: 800px) {
+  .searchContainer {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-bottom: 30px;
+  }
+}

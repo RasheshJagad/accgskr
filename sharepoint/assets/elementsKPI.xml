@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{B08D8B95-B5B6-413B-840E-7E5B84783FEF}"
+        Name="KPIValue"
+        DisplayName="Value"
+        Type="Text"
+        Group="GSK Columns" />
+    <Field ID="{31F87C49-2F9C-47CE-A8D4-7B7EC54B2C14}"
+        Name="KPICategory"
+        DisplayName="Category"
+        Type="Choice"
+        Group="GSK Columns">
+        <CHOICES>
+            <CHOICE>Overview</CHOICE>
+            <CHOICE>Storage &amp; Compute</CHOICE>
+            <CHOICE>Performance</CHOICE>
+        </CHOICES>
+    </Field>
+
+    <ContentType ID="0x01005EB684A223FE48518DDE87B6779C8AB6"
+        Name="KPI"
+        Group="GSK Content Types"
+        Description=""
+        Inherits="TRUE">
+        <FieldRefs>
+            <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+            <FieldRef ID="{B08D8B95-B5B6-413B-840E-7E5B84783FEF}" />
+            <FieldRef ID="{31F87C49-2F9C-47CE-A8D4-7B7EC54B2C14}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+        CustomSchema="schemaKPI.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="KPIs"
+        Description="KPIs"
+        TemplateType="100"
+        Url="Lists/KPIs">
+    </ListInstance>
+
+</Elements>

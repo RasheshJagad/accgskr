@@ -1,0 +1,14 @@
+.footerWrapper {
+    background-color: #FFFFFF !important;
+    color: #F36633 !important;
+    padding: 5px 20px;
+    text-align: right;
+    box-shadow: 0px 4px 4px 0px rgba(208, 208, 208, 0.25) inset;
+}
+
+.footerWrapper a, .footerWrapper a:hover, .footerWrapper a:visited {
+    color: #F36633 !important;
+    text-decoration: none !important;
+    padding: 5px 0;
+    margin-right: 20px;
+}

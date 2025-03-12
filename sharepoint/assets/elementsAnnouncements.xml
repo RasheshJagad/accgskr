@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{00ED9FE5-A969-4388-BDE2-F80739C28E63}"
+        Name="AnnouncementBody"
+        DisplayName="Body"
+        Type="Note"
+        RichText="TRUE"
+        Group="GSK Columns" />
+
+    <ContentType ID="0x0100E3A314B2521A4737B3361AA535211BA1"
+        Name="Service Announcement"
+        Group="GSK Content Types"
+        Description=""
+        Inherits="TRUE">
+        <FieldRefs>
+            <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+            <FieldRef ID="{00ED9FE5-A969-4388-BDE2-F80739C28E63}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+        CustomSchema="schemaAnnouncements.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="Announcements"
+        Description="Announcements"
+        TemplateType="100"
+        Url="Lists/Announcements">
+    </ListInstance>
+
+</Elements>

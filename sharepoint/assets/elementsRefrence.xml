@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{21B559C1-65A4-4212-8B9D-25FFA2C71F06}"
+        Name="ReferenceURL"
+        DisplayName="Reference URL"
+        Type="URL"
+        Group="GSK Columns" />
+
+    <ContentType ID="0x010011584319F0B648AC94456B0EF4DD19F9"
+        Name="Reference"
+        Group="GSK Content Types"
+        Description=""
+        Inherits="TRUE">
+        <FieldRefs>
+            <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" Name="Title" />
+            <FieldRef ID="{21B559C1-65A4-4212-8B9D-25FFA2C71F06}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+        CustomSchema="schemaReference.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="References"
+        Description="References"
+        TemplateType="100"
+        Url="Lists/References">
+    </ListInstance>
+
+</Elements>

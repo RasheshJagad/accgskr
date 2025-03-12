@@ -1,0 +1,45 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "marketing-navigation-application-customizer": {
+      "components": [
+        {
+          "entrypoint": "./lib/extensions/marketingNavigation/MarketingNavigationApplicationCustomizer.js",
+          "manifest": "./src/extensions/marketingNavigation/MarketingNavigationApplicationCustomizer.manifest.json"
+        }
+      ]
+    },
+    "root-landing-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/rootLanding/RootLandingWebPart.js",
+          "manifest": "./src/webparts/rootLanding/RootLandingWebPart.manifest.json"
+        }
+      ]
+    },
+    "announcements-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/announcements/AnnouncementsWebPart.js",
+          "manifest": "./src/webparts/announcements/AnnouncementsWebPart.manifest.json"
+        }
+      ]
+    },
+    "search-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/search/SearchWebPart.js",
+          "manifest": "./src/webparts/search/SearchWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "MarketingNavigationApplicationCustomizerStrings": "lib/extensions/marketingNavigation/loc/{locale}.js",
+    "RootLandingWebPartStrings": "lib/webparts/rootLanding/loc/{locale}.js",
+    "AnnouncementsWebPartStrings": "lib/webparts/announcements/loc/{locale}.js",
+    "SearchWebPartStrings": "lib/webparts/search/loc/{locale}.js"
+  }
+}

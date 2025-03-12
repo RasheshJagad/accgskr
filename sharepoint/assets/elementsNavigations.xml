@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{1A6AF239-7637-4033-8316-E2FA8C9556FE}"
+        Name="NavigationURL"
+        DisplayName="Navigation URL"
+        Type="URL"
+        Group="GSK Columns" />
+    <Field ID="{ACAD3935-AD9C-4D3C-8B95-9AD0B95B15A7}"
+        Name="NavigationParent"
+        DisplayName="Parent"
+        Type="Lookup"
+        List="Lists/Navigations"
+        ShowField="Title"
+        Group="GSK Columns" />
+
+    <ContentType ID="0x0100F2CDCB1551024635816C537B503820E7"
+        Name="Navigation"
+        Group="GSK Content Types"
+        Description="Navigation">
+        <FieldRefs>
+            <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" />
+            <FieldRef ID="{1A6AF239-7637-4033-8316-E2FA8C9556FE}" />
+            <FieldRef ID="{ACAD3935-AD9C-4D3C-8B95-9AD0B95B15A7}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ContentType ID="0x010097695C98F7D7464C89F3C2BB70DD5766"
+        Name="Footer"
+        Group="GSK Content Types"
+        Description="Footer">
+        <FieldRefs>
+            <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" />
+            <FieldRef ID="{1A6AF239-7637-4033-8316-E2FA8C9556FE}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+        CustomSchema="schemaNavigations.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="Navigations"
+        Description="Navigations"
+        TemplateType="100"
+        Url="Lists/Navigations">
+    </ListInstance>
+
+    <ListInstance
+        CustomSchema="schemaFooter.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="Footers"
+        Description="Footers"
+        TemplateType="100"
+        Url="Lists/Footers">
+    </ListInstance>
+
+</Elements>

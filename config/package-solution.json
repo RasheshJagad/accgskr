@@ -1,0 +1,71 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "root-marketing-portal-client-side-solution",
+    "id": "28fda7bd-3d98-44ad-90c3-7790998fe6a8",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Confluence",
+        "scope": "User.Read"
+      },
+      {
+        "resource": "my-gsk.atlassian.net",
+        "scope": "FullControl"
+      }
+    ],
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "root-marketing-portal description"
+      },
+      "longDescription": {
+        "default": "root-marketing-portal description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "Application Extension - Deployment of custom action",
+        "description": "Deploys a custom action with ClientSideComponentId association",
+        "id": "bb726d46-7272-455e-8fab-e4bff90ddd1b",
+        "version": "1.0.0.0",
+        "assets": {
+          "elementManifests": [
+            "elements.xml",
+            "ClientSideInstance.xml",
+            "elementsConfigurations.xml",
+            "elementsNavigations.xml",
+            "elementsServices.xml",
+            "elementsAnnouncements.xml",
+            "elementsRefrence.xml",
+            "elementsKPI.xml"
+          ],
+          "elementFiles": [
+            "schemaConfigurations.xml",
+            "schemaNavigations.xml",
+            "schemaServices.xml",
+            "schemaAnnouncements.xml",
+            "schemaReference.xml",
+            "schemaFooter.xml",
+            "schemaKPI.xml"
+          ]
+        }
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/root-marketing-portal.sppkg"
+  }
+}

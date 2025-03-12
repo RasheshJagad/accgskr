@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{0F43C4A4-3326-4984-BC32-BCBFE23BC6DA}"
+        Name="ConfigurationValue"
+        DisplayName="Value"
+        Type="Text"
+        Required="TRUE"
+        Group="GSK Columns" />
+    <Field ID="{61C197A9-A71D-4E7E-8400-678BD9B91DEA}"
+        Name="ConfigurationDescription"
+        DisplayName="Description"
+        Type="Note"
+        RichText="FALSE"
+        Group="GSK Columns" />
+
+    <ContentType ID="0x0100E3F71497E139493085838540DE09104E"
+        Name="Configuration"
+        Group="GSK Content Types"
+        Description="">
+        <FieldRefs>
+            <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" />
+            <FieldRef ID="{0F43C4A4-3326-4984-BC32-BCBFE23BC6DA}" />
+            <FieldRef ID="{61C197A9-A71D-4E7E-8400-678BD9B91DEA}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+        CustomSchema="schemaConfigurations.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="Configurations"
+        Description="Configurations"
+        TemplateType="100"
+        Url="Lists/Configurations">
+    </ListInstance>
+
+</Elements>

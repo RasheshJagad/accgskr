@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+    <Field ID="{65A794B2-5FBF-4CC3-B462-37E2520009DB}"
+        Name="ServiceDescription"
+        DisplayName="Description"
+        Type="Note"
+        RichText="FALSE"
+        Required="FALSE"
+        Group="GSK Columns" />
+    <Field ID="{C1971F1D-446B-4148-B7C4-6BD55CE50CA6}"
+        Name="ServiceURL"
+        DisplayName="Service URL"
+        Type="URL"
+        Required="FALSE"
+        Group="GSK Columns" />
+    <Field ID="{816415CA-30DC-4B17-9F51-76AACF2A34F9}"
+        Name="ServiceImage"
+        DisplayName="Image"
+        Type="URL"
+        Required="FALSE"
+        Group="GSK Columns" />
+
+    <ContentType ID="0x0100E984FFA4053C403C93EE869BB46C7CC4"
+        Name="Service"
+        Group="GSK Content Types"
+        Description="">
+        <FieldRefs>
+            <FieldRef ID="{fa564e0f-0c70-4ab9-b863-0177e6ddd247}" />
+            <FieldRef ID="{65A794B2-5FBF-4CC3-B462-37E2520009DB}" />
+            <FieldRef ID="{C1971F1D-446B-4148-B7C4-6BD55CE50CA6}" />
+            <FieldRef ID="{816415CA-30DC-4B17-9F51-76AACF2A34F9}" />
+        </FieldRefs>
+    </ContentType>
+
+    <ListInstance
+        CustomSchema="schemaServices.xml"
+        FeatureId="00bfea71-de22-43b2-a848-c05709900100"
+        Title="Services"
+        Description="Services"
+        TemplateType="100"
+        Url="Lists/Services">
+    </ListInstance>
+
+</Elements>
